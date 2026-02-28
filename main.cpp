@@ -114,12 +114,12 @@ int main(int argc, char** argv){
 
     //printing best movies for each prefix
     for(pair<string, Movies> &bestMovie : bestMovies) {
-      cout << "Best movie with prefix " << bestMovie.first << ": " << bestMovie.second.get_name() << " with rating " << std::fixed << std::setprecision(1) << bestMovie.second.get_rating() << endl;
+      cout << "Best movie with prefix " << bestMovie.first << " is: " << bestMovie.second.get_name() << " with rating " << std::fixed << std::setprecision(1) << bestMovie.second.get_rating() << endl;
     }
 
     //time taken calculation
     cout.precision(10);
-    cout << "Time taken: " << (double(endTime - startTime) / CLOCKS_PER_SEC) * 1000 << " milliseconds" << endl;
+    //cout << "Time taken: " << (double(endTime - startTime) / CLOCKS_PER_SEC) * 1000 << " milliseconds" << endl;
     return 0;
   }
 }
